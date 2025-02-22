@@ -60,29 +60,7 @@ Before running this project, make sure you have:
 
 ---
 
-## 📂 Directory Structure  
 
-```bash
-EV_Charging_Project/
-│── backend/                
-│   ├── manage.py
-│   ├── settings.py
-│   ├── models.py            
-│   ├── views.py             
-│   ├── ml_model/            
-│   │   ├── train.py        
-│   │   ├── predict.py      
-│── frontend/               
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── App.js          
-│── microcontroller/         
-│   ├── main.py            
-│── deployment/              
-│   ├── docker-compose.yml
-│   ├── nginx.conf
-│── README.md
 
 
 
@@ -125,6 +103,30 @@ EV_Charging_Project/
     java -cp "../out;../lib/mysql-connector-j-9.1.0.jar" banking_application.BankingApp
 (For macOS/Linux, replace ; with : in the -cp option.)
 
+## 📂 Directory Structure  
+
+> ```
+> EV_Charging_Project/
+> │── backend/                 # Django Backend
+> │   ├── manage.py
+> │   ├── settings.py
+> │   ├── models.py            # Database models
+> │   ├── views.py             # API endpoints
+> │   ├── ml_model/            # Machine Learning Model
+> │   │   ├── train.py         # Model training script
+> │   │   ├── predict.py       # Predictive analysis
+> │── frontend/                # React Dashboard
+> │   ├── src/
+> │   │   ├── components/
+> │   │   ├── pages/
+> │   │   ├── App.js           # Main React file
+> │── microcontroller/         # ESP32 Firmware
+> │   ├── main.py              # Reads sensor & sends data via MQTT
+> │── deployment/              # Deployment Scripts
+> │   ├── docker-compose.yml
+> │   ├── nginx.conf
+> │── README.md
+> ```
 
 
 Customization (Optional): Feel free to modify the content, add more destinations, or change the visuals to fit your own safari packages.
