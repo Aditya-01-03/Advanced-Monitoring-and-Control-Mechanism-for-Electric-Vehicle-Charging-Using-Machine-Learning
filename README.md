@@ -60,26 +60,30 @@ Before running this project, make sure you have:
 
 ---
 
+## 📂 Directory Structure  
+
+```bash
 EV_Charging_Project/
-│── backend/                 # Django Backend
+│── backend/                
 │   ├── manage.py
 │   ├── settings.py
-│   ├── models.py            # Database models
-│   ├── views.py             # API endpoints
-│   ├── ml_model/            # Machine Learning Model
-│   │   ├── train.py         # Model training script
-│   │   ├── predict.py       # Predictive analysis
-│── frontend/                # React Dashboard
+│   ├── models.py            
+│   ├── views.py             
+│   ├── ml_model/            
+│   │   ├── train.py        
+│   │   ├── predict.py      
+│── frontend/               
 │   ├── src/
 │   │   ├── components/
 │   │   ├── pages/
-│   │   ├── App.js           # Main React file
-│── microcontroller/         # ESP32 Firmware
-│   ├── main.py              # Reads sensor & sends data via MQTT
-│── deployment/              # Deployment Scripts
+│   │   ├── App.js          
+│── microcontroller/         
+│   ├── main.py            
+│── deployment/              
 │   ├── docker-compose.yml
 │   ├── nginx.conf
 │── README.md
+
 
 
 ## 🗃️ Database Setup
